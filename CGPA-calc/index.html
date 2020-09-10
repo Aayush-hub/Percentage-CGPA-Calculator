@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--External Css-->
+    <link rel=" stylesheet" href="cgpa.css">
+
+    <!--External Javascript-->
+    <script src="CGPA.js"></script>
+
+    <title>CGPA</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <span class="navbar-brand mb-0 h1 text-monospace text-primary">Welcome, Calulate your CGPA</span>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <div class="jumbotron bg-dark">
+            <h1 class="h1 text-monospace text-primary">Please Fill out Following Details</h1><br><br>
+            <form class="was-validated">
+                <div class="form-row">
+                    <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="number" min="1" id="entered-marks" class="form-control col-md-3 mr-3"
+                            placeholder="Enter marks obatined" name="entered-marks" required><br>
+                        <input type="number" min="1" id="Total-marks" class="form-control col-md-3"
+                            placeholder="Enter Total marks" required>
+                    </div>
+                </div>
+            </form>
+            <hr class="my-4">
+
+            <a id="calculate" onclick="fn1()" class="btn btn-primary btn-lg mb-4 text-monospace" href="#"
+                role="button">Calculate</a>
+
+
+            <div>
+                <div class="input-group-prepend">
+                    <input type="text" id="percentage-got" class="form-control col-md-3 mr-3" placeholder="Percentage"
+                        aria-describedby="basic-addon1" disabled>
+
+                    <input type="text" id="Cgpa-got" class="form-control col-md-3 mr-3" placeholder="CGPA"
+                        aria-describedby="basic-addon1" disabled>
+
+                    <input type="text" id="grade" class="form-control col-md-3" placeholder="GRADE"
+                        aria-describedby="basic-addon1" disabled>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
